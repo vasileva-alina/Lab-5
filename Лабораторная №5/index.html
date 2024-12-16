@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Лаб №5</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.task {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Задания по JavaScript</h1>
+
+<div class="task">
+  <h2>1. Калькулятор</h2>
+  <input type="number" id="num1" placeholder="Число 1">
+  <select id="operation">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" id="num2" placeholder="Число 2">
+  <button onclick="calculate()">Вычислить</button>
+  <p id="result1"></p>
+</div>
+<div class="task">
+    <h2>2. Проверка условия</h2>
+    <input type="number" id="age" placeholder="Ваш возраст">
+    <button onclick="checkAge()">Ввод</button>
+    <p id="ageResult"></p> </div> 
+
+<div class="task">
+  <h2>3. Палиндром</h2>
+  <input type="text" id="surname" placeholder="Ваша фамилия">
+  <button onclick="checkPalindrome()">Проверить</button>
+  <p id="result3"></p>
+</div>
+
+<div class="task">
+  <h2>4. Среднее значение (Стрелочная функция)</h2>
+  <input type="text" id="numbers" placeholder="Числа через запятую">
+  <button onclick="calculateAverage()">Вычислить</button>
+  <p id="result4"></p>
+</div>
+
+<div class="task">
+  <h2>5. Дни до Нового года (Стрелочная функция)</h2>
+  <button onclick="daysToNewYear()">Вычислить</button>
+  <p id="result5"></p>
+</div>
+
+<div class="task">
+  <h2>6. Пустая функция</h2>
+  <p>Результат: <span id="result6"></span></p>
+  <script>document.getElementById('result6').textContent = emptyFunction();</script>
+</div>
+
+<div class="task">
+  <h2>7. Работа с массивом (Стрелочные функции)</h2>
+  <p>Массив: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</p>
+  <p id="result7"></p>
+</div>
+
+<div class="task">
+  <h2>8. Фильтр e-mail (HTML + JS)</h2>
+  <input type="text" id="emailFilter" placeholder="Фильтр по названию почты">
+  <ul id="emailList"></ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
